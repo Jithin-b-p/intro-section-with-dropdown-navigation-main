@@ -15,7 +15,7 @@
   @font-face {
     font-family: "Epilogue";
     src: url("/fonts/EpilogueMedium.woff2") format("woff2"),
-      url("fonts/EpilogueMedium.woff") format("woff");
+      url("/fonts/EpilogueMedium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
     font-display: swap;

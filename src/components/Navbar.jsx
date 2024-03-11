@@ -15,6 +15,7 @@ function Navbar({
     <>
       <MenuButton isMenuOpen={isMenuOpen} onMenuOpen={onMenuOpen} />
       <nav
+        id="navbar-menu"
         className={`sm:flex-1 inset-x-0 inset-y-0 fixed sm:static transition-backdrop ${
           isMenuOpen ? "backdrop-brightness-50" : "backdrop-brightness-100"
         }`}
@@ -32,10 +33,13 @@ function Navbar({
                   : "after:content-[url('/images/icon-arrow-down.svg')] after:ml-2"
               } `}
               onClick={onFeatureMenuOpen}
+              aria-expanded={isFeatureMenuOpen}
+              aria-controls="features-menu"
             >
               Features
             </button>
             <DropDown
+              id="features-menu"
               items={features}
               isMenuOpen={isFeatureMenuOpen}
               customStyle="-left-20 top-10 px-6 py-6"
@@ -49,10 +53,13 @@ function Navbar({
                   : "after:content-[url('/images/icon-arrow-down.svg')] after:ml-2"
               } `}
               onClick={onCompanyMenuOpen}
+              aria-expanded={isCompanyMenuOpen}
+              aria-controls="company-name"
             >
               Company
             </button>
             <DropDown
+              id="company-menu"
               items={companyRelated}
               customStyle="-left-1 top-10 py-6 px-7"
               isMenuOpen={isCompanyMenuOpen}
