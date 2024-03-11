@@ -25,13 +25,13 @@ function Navbar({
             isMenuOpen ? "-translate-x-0" : "translate-x-full"
           }`}
         >
-          <li className="relative">
+          <li className="relative ">
             <button
               className={`transition-all hover:text-customNeutral-300 ${
                 isFeatureMenuOpen
                   ? "after:content-[url('/images/icon-arrow-up.svg')] after:ml-2"
                   : "after:content-[url('/images/icon-arrow-down.svg')] after:ml-2"
-              } `}
+              }`}
               onClick={onFeatureMenuOpen}
               aria-expanded={isFeatureMenuOpen}
               aria-controls="features-menu"
