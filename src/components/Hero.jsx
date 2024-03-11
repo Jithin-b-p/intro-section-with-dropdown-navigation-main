@@ -46,9 +46,10 @@ function Hero() {
       <picture className="mx-auto lg:mx-0">
         <source
           media="(min-width: 64rem)"
-          srcSet="/images/image-hero-desktop.png"
+          srcSet="/images/image-hero-desktop.webp"
           type="image/png"
           width={480}
+          height={800}
         />
         <img
           src="/images/image-hero-mobile.png"
